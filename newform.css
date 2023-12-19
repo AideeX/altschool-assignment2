@@ -1,0 +1,260 @@
+/*css reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+  /*main css*/
+
+  html{
+    background-color: #F7FDFC;
+
+  }
+  .main-container
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  
+  .left-section
+  {
+    padding-block-start: 205px;
+    /*padding-inline-start: 140px;*/
+  }
+  
+  h2{
+      color: var(--cl-black, #000B0A);
+      font-family: 'Brown', 'Montserrat', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: -0.8px;
+      padding-block-start: 50px;
+  }
+  
+  .pg-1{
+    color: var(--cl-grey, #737373);
+      font-family: 'Brown', 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      padding-block-start: 20px;
+      height: 75px;
+      width: 460px;
+  }
+  
+  .right-section
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+margin-block-start: 81px;
+margin-inline-start: 120px;
+font-family: 'Sofia Pro', 'Poppins', sans-serif;
+border-radius: 6px;
+box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+padding: 40px;
+width: 580px;
+height: 710px;
+}
+
+.form-container
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+.one, .two, .three, .four, .five, .six
+{
+  display: flex;
+  flex-direction: column;
+}
+
+label
+{
+  padding-block-end: 10px;
+  color: var(--Text-Headings, #011C34);
+  font-family: 'Sofia Pro', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.form-container input, .form-container select{
+    width: 238px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid var(--cl-gray-3, #F0F0F0);
+  }
+  
+  .bottom-form
+  {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 30px;
+  }
+  
+  .bottom-form input, .bottom-form select{
+    width: 500px;
+    height: 48px;
+    flex-shrink: 0;
+border: 1px solid var(--cl-gray-3, #F0F0F0);
+}
+
+  button{
+    background-color: #2EC4B6;
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+    color: #fff;
+    border: transparent;
+    text-align: center;
+font-family: 'Sofia Pro', 'Poppins', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.2px;
+margin-block-start: 30px;
+width: 500px;
+height: 48px;
+flex-shrink: 0;
+}
+
+  .password
+  {
+padding-block-start: 30px;
+  }
+
+  .pwd-container
+{
+  display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.material-symbols-outlined {
+  position: absolute;
+   top: 12px;
+   right: 16px;
+   color: #A6A6A6;
+  }
+  
+  .pg-2
+  {
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+line-height: 25px;
+width: max-content;
+height: 25px;
+padding-block-start: 16px;
+padding-inline-start: 18px;
+padding-inline-end: 19px;
+}
+
+a{
+    color: var(--CL-Green, #2EC4B6);
+    font-family: 'Sofia Pro', 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+line-height: 25px;
+text-decoration-line: underline;
+}
+
+input[placeholder="Tolu"]
+{
+    color: var(--Text-Headings, #011C34);
+font-family: 'Sofia Pro', 'Poppins', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+}
+  input[value=""], input[placeholder="Select here"], input[placeholder="Enter Weight"]
+  {
+    color: var(--CL-Grey, #737373);
+font-family: 'Sofia Pro', 'Poppins', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 900px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 24px;
+    width: 100%;
+    margin-block-start: 30px;
+  padding-block-end: 64px;
+  }
+
+  h2{
+  color: var(--CL-Black, #000B0A);
+  font-family: 'Brown', 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  }
+
+  .pg-1{
+    color: var(--CL-Grey, #737373);
+font-family: 'Brown', 'Montserat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 25px;
+padding-block-end: 40px;
+  }
+
+  .right-section{
+    width: 327px;
+height: 870px;
+flex-shrink: 0;
+margin-inline: 24px;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input, button, select{
+    width: 295px;
+height: 48px;
+flex-shrink: 0;
+  }
+  }
+
+
