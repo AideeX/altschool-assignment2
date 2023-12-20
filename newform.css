@@ -34,7 +34,10 @@
       flex-direction: row;
       justify-content: center;
   }
-
+.logo{
+  width: 77.333px;
+height: 80px;
+}
   
   .left-section
   {
@@ -110,6 +113,18 @@ label
     flex-shrink: 0;
     border-radius: 2px;
     border: 1px solid var(--cl-gray-3, #F0F0F0);
+  }
+
+  input[name="first-name"]
+  {
+border: 3px solid var(--CL-Green, #2EC4B6);
+color: var(--Text-Headings, #011C34);
+font-family: 'Sofia Pro', 'Poppins', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.2px;
   }
   
   .bottom-form
@@ -187,16 +202,6 @@ line-height: 25px;
 text-decoration-line: underline;
 }
 
-input[placeholder="Tolu"]
-{
-    color: var(--Text-Headings, #011C34);
-font-family: 'Sofia Pro', 'Poppins', sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.2px;
-}
   input[value=""], input[placeholder="Select here"], input[placeholder="Enter Weight"]
   {
     color: var(--CL-Grey, #737373);
@@ -204,58 +209,62 @@ font-family: 'Sofia Pro', 'Poppins', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 300;
-line-height: 20px; /* 142.857% */
+line-height: 20px;
 letter-spacing: 0.2px;
 }
 
-/*
-@media screen and (max-width: 900px){
-  .main-container{
-    display: flex;
-    flex-direction: column;
-    padding-inline: 24px;
-    width: 100%;
-    margin-block-start: 30px;
-  padding-block-end: 64px;
+/* media queries */
+
+@media (max-width: 768px) {
+  .main-container
+  {display: flex;
+   flex-direction: column;
+   margin-inline: 24px;
+  }
+
+  .logo{
+   width: 38.667px;
+height: 40px;
+  }
+
+  .left-section{
+   padding-block-start: 30px;
   }
 
   h2{
-  color: var(--CL-Black, #000B0A);
-  font-family: 'Brown', 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.8px;
+   font-size: 30px;
+   padding-block-start: 40px;
   }
 
   .pg-1{
-    color: var(--CL-Grey, #737373);
-font-family: 'Brown', 'Montserat', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 25px;
-padding-block-end: 40px;
+   width: 327px;
+   padding-block-start: 12px;
   }
 
   .right-section{
-    width: 327px;
-height: 870px;
-flex-shrink: 0;
-margin-inline: 24px;
+   width: 327px;
+   height: 870px;
+   margin-block-start: 40px;
+   margin-inline: inherit;
   }
 
   .form-container{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
   }
 
-  input, button, select{
-    width: 295px;
-height: 48px;
-flex-shrink: 0;
+  .bottom-form{
+   margin-block-start: 24px;
   }
+
+  input, select, button{
+   width: 295px;
+   height: 48px;
   }
-*/
+
+  .pg-2{
+   width: 316px;
+   padding-block-start: 24px;
+  }
+ }
 
