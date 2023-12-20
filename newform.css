@@ -208,6 +208,7 @@ line-height: 20px; /* 142.857% */
 letter-spacing: 0.2px;
 }
 
+/*
 @media screen and (max-width: 900px){
   .main-container{
     display: flex;
@@ -256,5 +257,5 @@ height: 48px;
 flex-shrink: 0;
   }
   }
-
+*/
 
