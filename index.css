@@ -80,7 +80,7 @@
         height: 80px;
         filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
       }
-      
+
       @media screen and (min-width: 450px) and (max-width: 768px){
         img {
           inline-size: auto;
@@ -245,7 +245,8 @@ label[for="gender"], label[for="dob"], label[for="weight"], label[for="height"],
     height: 48px;
     border-radius: 2px;
         border: 1px solid var(--cl-gray-3, #F0F0F0);
-        padding-inline-start: 16px
+        padding-inline-start: 16px;
+        background-color: transparent;
 }
 
 @media screen and (min-width: 450px) and (max-width: 768px) {
@@ -254,7 +255,7 @@ label[for="gender"], label[for="dob"], label[for="weight"], label[for="height"],
         height: 48px;
         border-radius: 2px;
         border: 1px solid var(--cl-gray-3, #F0F0F0);
-        padding-inline-start: 16px
+        padding-inline-start: 16px;
       }
 }
 @media screen and (max-width: 450px) {
@@ -263,7 +264,7 @@ label[for="gender"], label[for="dob"], label[for="weight"], label[for="height"],
         height: 48px;
         border-radius: 2px;
         border: 1px solid var(--cl-gray-3, #F0F0F0);
-        padding-inline-start: 16px
+        padding-inline-start: 16px;
       }
 }
 
@@ -276,6 +277,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.2px;
+background-color: transparent;
   }
   
   .bottom-form{
@@ -288,7 +290,8 @@ letter-spacing: 0.2px;
         height: 48px;
         border-radius: 2px;
         border: 1px solid var(--cl-gray-3, #F0F0F0);
-        padding-inline-start: 16px
+        padding-inline-start: 16px;
+        background-color: transparent;
     }
     
     input:focus, select:focus{
@@ -300,6 +303,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.2px;
+background-color: transparent;
     }
 
   .pwd-container
