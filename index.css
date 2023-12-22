@@ -60,19 +60,22 @@
 {
   padding-block-start: 205px;
   padding-inline-start: 140px;
+  padding-block-end: 360px;
 }
 @media screen and (min-width: 450px) and (max-width: 768px){
   .left-section
   {
     padding-block-start: 30px;
     padding-inline: 24px;
-  }
+    padding-block-end: 0;
+}
 }
 @media screen and (max-width: 450px){
-  .left-section
-  {
-    padding-block-start: 30px;
-    padding-inline: 24px;
+    .left-section
+    {
+        padding-block-start: 30px;
+        padding-inline: 24px;
+        padding-block-end: 0;
   }
 }
     img {
